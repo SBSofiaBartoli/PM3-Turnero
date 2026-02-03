@@ -1,0 +1,33 @@
+.notFoundContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+    text-align: center;
+    color: #285631;
+}
+
+.notFoundContainer h1 {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+}
+
+.notFoundContainer p {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.backHome {
+    background-color: #285631;
+    color: #f7f4ec;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.backHome:hover {
+    background-color: #3b7a49;
+}

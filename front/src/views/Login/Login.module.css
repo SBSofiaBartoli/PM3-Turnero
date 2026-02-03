@@ -1,0 +1,147 @@
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 450px;
+    background: rgb(180, 243, 180);
+    font-size: 20px;
+    width: 600px;
+    border-radius: 20px;
+}
+
+.loginContainer > h2 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.loginContainer > form {
+    background: rgb(156, 233, 156);
+    padding: 20px 50px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.loginContainer > form > button {
+    font-weight: 600;
+    padding: 10px 0;
+    margin-top: 15px;
+    width: 200px;
+    border-radius: 15px;
+    background: rgb(83, 163, 83);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.loginContainer > form > button:hover {
+    opacity: 0.8;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 400px;
+}
+
+.inputGroup > input {
+    border: 0;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: 0;
+}
+
+.inputGroup > p {
+    color: red;
+    font-size: 15px;
+}
+
+@media (max-width: 1024px) {
+    .loginContainer {
+        margin: 40px auto;
+        width: 80%;
+        padding: 20px;
+    }
+
+    .loginContainer > form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .inputGroup {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .loginContainer {
+        width: 90%;
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    .loginContainer > h2 {
+        font-size: 30px;
+    }
+
+    .loginContainer > form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .loginContainer > form > button {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .inputGroup {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .inputGroup > input {
+        font-size: 15px;
+        padding: 8px;
+    }
+    }
+
+    @media (max-width: 480px) {
+    .loginContainer {
+        width: 95%;
+        margin: 20px auto;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .loginContainer > h2 {
+        font-size: 24px;
+    }
+
+    .loginContainer > form {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .loginContainer > form > button {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    .inputGroup > input {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .inputGroup > p {
+        font-size: 13px;
+    }
+}

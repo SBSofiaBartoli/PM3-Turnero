@@ -1,0 +1,137 @@
+
+.appointmentForm {
+    background: rgb(156, 233, 156);
+    padding: 20px 50px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.appointmentForm > div > button {
+    font-weight: 600;
+    padding: 10px 0;
+    margin-top: 15px;
+    width: 150px;
+    border-radius: 15px;
+    background: rgb(83, 163, 83);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reserveButton {
+    background-color: rgb(83, 163, 83);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.reserveButton:hover {
+    opacity: 0.9;
+}
+
+.buttonsGroup {
+    display: flex;
+    gap: 20px;
+}
+.appointmentForm > button:hover {
+    opacity: 0.8;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 400px;
+}
+
+.inputGroup > input {
+    border: 0;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: 0;
+}
+
+.inputGroup > select {
+    border: 0;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: 0;
+}
+
+.inputGroup > p {
+    color: red;
+    font-size: 15px;
+}
+
+@media (max-width: 900px) {
+    .appointmentForm {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .inputGroup {
+        width: 100%;
+    }
+
+    .reserveButton {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .buttonsGroup {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .buttonsGroup button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .appointmentForm {
+        width: 95%;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .inputGroup {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .inputGroup > input,
+    .inputGroup > select {
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    .reserveButton {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .appointmentForm > div > button {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .buttonsGroup {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
